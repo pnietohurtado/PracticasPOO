@@ -16,13 +16,10 @@ public class Main
    
     public static void main(String[] args) {
         
-        //not null
-        Configuration conf =  Configuration.configuration(); 
-        System.out.println(conf);
-        
-        //null
-        Configuration conf2 = null; 
-        System.out.println(conf2);
+        Configuration conf1 = Configuration.configuration("Hola"); 
+        Configuration conf2 = Configuration.configuration("Adios"); 
+        System.out.println(conf1.value);
+        System.out.println(conf2.value);
     }
     
 }

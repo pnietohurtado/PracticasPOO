@@ -11,17 +11,16 @@ package PracticaPOO4;
 public class Configuration {
     
     private static Configuration conf; 
+    public String value; 
     
-    
-    public Configuration(){
-        
-       
+    public Configuration(String value){
+        this.value = value ; 
         
     }
     
-    public static Configuration configuration(){
+    public static Configuration configuration(String value){
         if(conf == null){
-            conf = new Configuration(); 
+            conf = new Configuration(value); 
         }
         return conf; 
     }
